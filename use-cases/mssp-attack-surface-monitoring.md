@@ -38,7 +38,7 @@ Running Amass + Nuclei + nmap across 50 clients with bash scripts means:
 |-------------|--------------|
 | Multi-tenant client separation | ✅ Projects + RBAC |
 | Continuous scheduled scanning | ✅ Cron-based scan schedules |
-| SOC alerting integration | ✅ Slack, Teams, PagerDuty, Opsgenie, Discord, Twilio SMS |
+| SOC alerting integration | ✅ Slack, Teams, PagerDuty, Opsgenie, Discord, Telegram, Lark |
 | Compliance reporting | ✅ SOC 2, PCI DSS, HIPAA, ISO 27001, FedRAMP, NIST CSF, NYDFS, GDPR, CIS v8 |
 | AI-assisted triage | ✅ OpenAI / local Ollama |
 | Deployment | AWS + Azure Marketplace (including Azure Government) |

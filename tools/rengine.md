@@ -52,8 +52,8 @@ Managed alternative: [HailBytes ASM](https://hailbytes.com/asm) — deploy from 
 | **AI analysis** | v2.1+ integrates OpenAI GPT or local Ollama for finding triage and report summaries |
 | **Scheduled scans** | Cron-based continuous monitoring; diff alerts on new findings |
 | **Web UI** | Full Django web app; no CLI knowledge needed for day-to-day use |
-| **Compliance** | (HailBytes fork) 10 compliance framework reports: HIPAA, SOC 2, PCI DSS, FedRAMP, NYDFS, GDPR, ISO 27001, CIS v8, NIST CSF 2.0 |
-| **Alert integrations** | Slack, Teams, Discord, Telegram, Lark, Twilio SMS, PagerDuty, Opsgenie |
+| **Compliance** | (HailBytes fork) 10 compliance framework reports including HIPAA, SOC 2, PCI DSS, FedRAMP, NYDFS, GDPR, ISO 27001, CIS v8, NIST CSF 2.0 |
+| **Alert integrations** | Slack, Teams, Discord, Telegram, Lark, PagerDuty, Opsgenie |
 
 ---
 
