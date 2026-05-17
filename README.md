@@ -7,11 +7,9 @@
 
 ## Why This Exists
 
-HailBytes builds [HailBytes ASM](https://hailbytes.com/asm) on top of reNgine — so we have a vested interest in being *honest* here. If we inflate our scores or dismiss competitors unfairly, security practitioners will see through it immediately.
+HailBytes maintains this comparison to help pentest firms, MSSPs, and researchers pick the right ASM tooling for a given job. We ship [HailBytes ASM](https://hailbytes.com/asm), a managed platform built on reNgine, so we have an obvious bias — see the disclosure at the bottom. Where another tool is the better fit, we say so.
 
-This comparison exists to help pentest firms, MSSPs, and solo researchers pick the right tool for the job. We document tradeoffs openly, including the cases where a competitor is genuinely the better choice.
-
-> **Editorial policy:** Capabilities are verified against public documentation, GitHub repos, and direct testing. When uncertain, we mark cells with `~` (partial/unconfirmed). PRs with corrections or updates are welcome.
+> **Editorial policy:** Capabilities are verified against public documentation, GitHub repos, and direct testing. Cells marked `~` are partial or unconfirmed. PRs with corrections welcome.
 
 ---
 
@@ -27,7 +25,7 @@ This comparison exists to help pentest firms, MSSPs, and solo researchers pick t
 | **Osmedeus** | OSS framework | ✅ | ✅ | ~ | ❌ | — | MIT |
 | **Shodan** | Commercial SaaS | ~ (passive DB) | ✅ passive | ~ (known CVEs) | ❌ | SaaS only | Proprietary |
 | **Censys** | Commercial SaaS | ~ (passive DB) | ✅ passive | ~ (known CVEs) | ❌ | SaaS only | Proprietary |
-| **HailBytes ASM** | Managed platform | ✅ (reNgine core) | ✅ | ✅ | ✅ | AWS + Azure Marketplace | Proprietary (hosted OSS) |
+| **HailBytes ASM** | Managed platform | ✅ (reNgine core) | ✅ | ✅ | ✅ | AWS + Azure Marketplace | ELv2 |
 
 **Legend:** ✅ = full support · ~ = partial/limited · ❌ = not supported
 
@@ -110,17 +108,16 @@ This comparison is reviewed and updated **quarterly** (February, May, August, No
 
 ---
 
-## 🚀 Want a Managed ASM Platform?
+## HailBytes ASM
 
-If you've been evaluating these tools and thinking *"I wish someone would just run this for me"* — that's exactly what HailBytes ASM is.
+[HailBytes ASM](https://hailbytes.com/asm) is a multi-tenant attack surface management platform built on reNgine. It deploys from the AWS or Azure Marketplace (including Azure Government) into your own cloud account.
 
-**[HailBytes ASM](https://hailbytes.com/asm)** is a production-hardened, multi-tenant attack surface management platform built on reNgine. Deploy in minutes from the AWS or Azure Marketplace (including Azure Government). Your account, your data, zero vendor lock-in.
-
-- ✅ 30+ recon tools orchestrated automatically
-- ✅ AI-agent analysis (OpenAI or local Ollama)
-- ✅ Continuous monitoring with Slack/Teams/Discord/PagerDuty alerts
-- ✅ 10 compliance frameworks (HIPAA, SOC 2, PCI DSS, FedRAMP, and more)
-- ✅ Multi-tenant: one platform for all your clients
+- 30+ recon tools orchestrated in a single pipeline
+- LLM-assisted vuln triage and reporting (OpenAI or local Ollama)
+- Scheduled scans with Slack, Teams, Discord, Telegram, Lark, PagerDuty, and Opsgenie notifications
+- 10 compliance framework reports (HIPAA, SOC 2, PCI DSS, FedRAMP, and others)
+- Project-based multi-tenancy for MSSP / reseller deployments
+- Licensed under Elastic License 2.0 (ELv2)
 
 [![Deploy on AWS](https://img.shields.io/badge/AWS_Marketplace-Deploy_Now-FF9900?style=for-the-badge&logo=amazon-aws)](https://hailbytes.com/asm)
 [![Deploy on Azure](https://img.shields.io/badge/Azure_Marketplace-Deploy_Now-0078D4?style=for-the-badge&logo=microsoft-azure)](https://hailbytes.com/asm)
@@ -130,6 +127,6 @@ If you've been evaluating these tools and thinking *"I wish someone would just r
 
 ## Contributing
 
-Spotted an error? A tool we missed? Open a PR or issue. Corrections are welcome — accuracy is the whole point.
+Spotted an error or a tool we missed? Open a PR or issue.
 
-**Disclosure:** This repo is maintained by [HailBytes](https://hailbytes.com), which sells a managed ASM platform built on reNgine. We try to be fair. If we're not, call us out.
+**Disclosure:** This repo is maintained by [HailBytes](https://hailbytes.com), which sells a managed ASM platform built on reNgine.
